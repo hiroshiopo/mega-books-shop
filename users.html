@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Giữ nguyên các định dạng CSS từ ví dụ trước */
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="profile-card">
+          <img src="profile-image.jpg" alt="Profile Image" class="profile-image">
+          <h2 class="profile-name">John Doe</h2>
+          <p class="profile-email">johndoe@example.com</p>
+          <div class="profile-actions">
+            <a href="index2.html">Home</a>
+            <a href="#">Edit Profile</a>
+            <a href="#">Change Password</a>
+            <a href="#">Logout</a>
+          </div>
+          <div class="profile-info">
+            <h3>Account Information</h3>
+            <p>Available Balance: $
+                <?php echo number_format($balance, 2); ?></p>
+            <p>Transaction History:</p>
+            <ul>
+              <li>April 1, 2023 - Deposit $500.00</li>
+              <li>March 15, 2023 - Withdrawal $200.00</li>
+              <li>February 28, 2023 - Payment $50.00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
